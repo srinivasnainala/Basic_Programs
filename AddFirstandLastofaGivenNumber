@@ -1,0 +1,15 @@
+public class AddFirstandLastofaGivenNumber {
+public static void main(String[] args) {
+	int a= 645454;
+	int sum=0;
+	int first=a;
+	int last=a%10;
+	while(first>=10)
+	{
+		first=first/10;
+	    sum=first+last;
+		}
+
+    System.out.println("Sum of " +first+" and " +last+ " digit of a given number is "+sum);
+}
+}
