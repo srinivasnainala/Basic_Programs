@@ -1,0 +1,16 @@
+public class BigDigitinaNumber {
+public static void main(String[] args) {
+	int n=12314523;
+	int big=n%10;
+	while(n>0)
+	{
+		int r=n%10;
+		if(r>big)
+		{
+			big=n%10;
+		}
+		n=n/10;
+	}
+	System.out.println("Big digit in a given number is :"+big);
+}
+}

@@ -1,0 +1,22 @@
+public class Armstrong {
+public static void main(String[] args) {
+	int temp,count=0,sum=0,n=355;
+	
+	while(n!=0)
+	{
+		int r=n%10;
+		count++;
+		n=n/10;
+		int digit=count;
+        Math.pow(r, digit);
+	}
+//	System.out.println(count);
+	if(sum==n)
+	{
+		System.out.println("Given number is ArmStrong");
+	}
+	else
+	{
+		System.out.println("Given number is not Armstrong");
+	}
+}
